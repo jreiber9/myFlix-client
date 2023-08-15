@@ -7,6 +7,7 @@ import Modal from "react-bootstrap/Modal";
 import { MovieCard } from "../movie-card/movie-card";
 import { ModalHeader } from "react-bootstrap";
 import { MovieView } from "../movie-view/movie-view";
+import './profile-view.scss';;
 
 export const ProfileView = ({ user, token, setUser, movies, onLogout }) => {
     const [username, setUsername] = useState(user.Username);
@@ -82,6 +83,7 @@ export const ProfileView = ({ user, token, setUser, movies, onLogout }) => {
                     <h3>Information</h3>
                     <div>Username: {user.Username}</div>
                     <div>Email: {user.Email}</div>
+                    <div>Birthdate: {user.Birthday}</div>
                 </Col>
 
                 <Col>
@@ -129,7 +131,9 @@ export const ProfileView = ({ user, token, setUser, movies, onLogout }) => {
                             />
                         </Form.Group>
 
-                        <Button variant="primary" type="submit">
+                        <Button variant="primary"
+                            className="acc-button"
+                            type="submit">
                             Update Profile
                         </Button>
                     </Form>
@@ -145,7 +149,9 @@ export const ProfileView = ({ user, token, setUser, movies, onLogout }) => {
                 ))}
             </Row>
 
-            <Button variant="primary" onClick={handleShowModal}>
+            <Button variant="primary"
+                className="acc-button"
+                onClick={handleShowModal}>
                 Delete account
             </Button>
             <Modal show={showModal} onHide={handleCloseModal}>
@@ -154,10 +160,14 @@ export const ProfileView = ({ user, token, setUser, movies, onLogout }) => {
                 </Modal.Header>
                 <Modal.Body>Confirm delete account?</Modal.Body>
                 <Modal.Footer>
-                    <button variant="primary" onClick={handleDeleteUser}>
+                    <button variant="primary"
+                        className="yesno-button"
+                        onClick={handleDeleteUser}>
                         Yes
                     </button>
-                    <button variant="secondary" onClick={handleCloseModal}>
+                    <button variant="secondary"
+                        className="yesno-button"
+                        onClick={handleCloseModal}>
                         No
                     </button>
                 </Modal.Footer>

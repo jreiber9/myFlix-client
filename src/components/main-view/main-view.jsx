@@ -17,12 +17,8 @@ export const MainView = () => {
     const [movies, setMovies] = useState([]);
     const [user, setUser] = useState(null);
     const [token, setToken] = useState(null);
-    // const storedUser = JSON.parse(localStorage.getItem("user"));
-    // const storedToken = localStorage.getItem("token");
-    // const [user, setUser] = useState(storedUser ? storedUser : null);
-    // const [token, setToken] = useState(storedToken ? storedToken : null);
-    // const [movies, setMovies] = useState([]);
-    // const [selectedMovie, setSelectedMovie] = useState(null);
+    const [filteredMovies, setFilteredMovies] = useState([]);
+
 
     const onLogout = () => {
         setUser(null);
@@ -62,6 +58,18 @@ export const MainView = () => {
             });
     }, [token]);
 
+    useEffect(() => {
+        setFilteredMovies(movies);
+    }, [movies]);
+
+    const handleSearchInput = (e) => {
+        const searchWord = e.target.value.toLowerCase();
+        let tempArray = movies.filter((movie) =>
+            movie.title.toLowerCase().includes(searchWord)
+        );
+        setFilteredMovies(tempArray);
+    };
+
 
     return (
         <BrowserRouter>
@@ -70,6 +78,7 @@ export const MainView = () => {
                 onLoggedOut={() => {
                     setUser(null);
                 }}
+                handleSearchInput={handleSearchInput}
             />
             <Row className="justify-content-md-center">
                 <Routes>
@@ -158,7 +167,7 @@ export const MainView = () => {
                                     <Col>The list is empty!</Col>
                                 ) : (
                                     <>
-                                        {movies.map((movie) => (
+                                        {filteredMovies.map((movie) => (
                                             <Col className="mb-4" key={movie.id} md={3}>
                                                 <MovieCard movie={movie} />
                                             </Col>
