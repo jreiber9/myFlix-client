@@ -8,10 +8,11 @@ The project is an app that allows users to create an account, search for and boo
 
 This project was constructed using-
 
--Parcel
--Bootstrap
--React
--React-router
+* Parcel
+* Bootstrap
+* React
+* React-router
+* Proptypes
 
 ## API Integration
 
