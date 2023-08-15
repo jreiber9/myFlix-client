@@ -27389,11 +27389,7 @@ $RefreshReg$(_c, "MainView");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-<<<<<<< Updated upstream
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../movie-card/movie-card":"bwuIu","../movie-view/movie-view":"ggaUx","../login-view/login-view":"9YtA0","../signup-view/signup-view":"4OGiN","../navigation-bar/navigation-bar":"bsPVM","../profile-view/profile-view":"2vVqf","react-bootstrap/Row":"cMC39","react-bootstrap/Col":"2L2I6","react-bootstrap/Container":"hEdsw","react-bootstrap/Button":"aPzUt","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"2gOIE","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cclDY"}],"bwuIu":[function(require,module,exports) {
-=======
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../movie-card/movie-card":"bwuIu","../movie-view/movie-view":"ggaUx","../login-view/login-view":"9YtA0","../signup-view/signup-view":"4OGiN","react-bootstrap/Row":"cMC39","react-bootstrap/Col":"2L2I6","@parcel/transformer-js/src/esmodule-helpers.js":"2gOIE","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cclDY"}],"bwuIu":[function(require,module,exports) {
->>>>>>> Stashed changes
 var $parcel$ReactRefreshHelpers$67b2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27483,11 +27479,7 @@ $RefreshReg$(_c, "MovieCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-<<<<<<< Updated upstream
 },{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react-bootstrap":"3AD9A","react-router-dom":"9xmpe","./movie-card.scss":"d6HH4","@parcel/transformer-js/src/esmodule-helpers.js":"2gOIE","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cclDY"}],"7wKI2":[function(require,module,exports) {
-=======
-},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react-bootstrap":"3AD9A","./movie-card.scss":"d6HH4","@parcel/transformer-js/src/esmodule-helpers.js":"2gOIE","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cclDY"}],"7wKI2":[function(require,module,exports) {
->>>>>>> Stashed changes
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -40891,7 +40883,6 @@ exports.default = Object.assign(ToggleButtonGroup, {
     Button: (0, _toggleButtonDefault.default)
 });
 
-<<<<<<< Updated upstream
 },{"react":"21dqq","invariant":"d1QgR","uncontrollable":"b3yWY","./createChainedFunction":"1KNLM","./ElementChildren":"fdyAp","./ButtonGroup":"gXYCe","./ToggleButton":"dCmeV","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"2gOIE"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.14.2
@@ -46725,9 +46716,6 @@ function getDoneFetcher(data) {
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"2gOIE"}],"d6HH4":[function() {},{}],"cclDY":[function(require,module,exports) {
-=======
-},{"react":"21dqq","invariant":"d1QgR","uncontrollable":"b3yWY","./createChainedFunction":"1KNLM","./ElementChildren":"fdyAp","./ButtonGroup":"gXYCe","./ToggleButton":"dCmeV","react/jsx-runtime":"6AEwr","@parcel/transformer-js/src/esmodule-helpers.js":"2gOIE"}],"d6HH4":[function() {},{}],"cclDY":[function(require,module,exports) {
->>>>>>> Stashed changes
 "use strict";
 var Refresh = require("f7d0f9a7cb646649");
 function debounce(func, delay) {
